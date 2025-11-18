@@ -6,9 +6,18 @@
 }
 
 h2,
+h3,
 p,
-ul {
+ul,
+ol,
+pre {
   text-align: left;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin: 20px 0;
 }
 
 .logo {
