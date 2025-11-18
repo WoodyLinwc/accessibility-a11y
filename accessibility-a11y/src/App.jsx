@@ -129,10 +129,130 @@ function App() {
             <li>No keyboard traps</li>
           </ul>
           <li>ARIA Attributes</li>
+          <ul>
+            <li>
+              Use when semantic HTML isn't enough, don't overuse (semantic HTML
+              is better)
+            </li>
+            <li>
+              <em>aria-label</em> - Accessible name
+            </li>
+            <li>
+              <em>aria-labelledby</em> - Reference to label
+            </li>
+            <li>
+              <em>aria-describedby</em> - Additional description
+            </li>
+            <li>
+              <em>aria-live</em> - Announce dynamic content
+            </li>
+            <li>
+              <em>aria-expanded</em> - Toggle state
+            </li>
+            <li>
+              <em>aria-hidden</em> - Hide from screen readers
+            </li>
+          </ul>
+          <li>Focus Management</li>
+          <li>Form Accessibility</li>
+          <li>Color Contrast</li>
+          <li>Alt Text for Images</li>
         </ol>
       </MyAccordion>
-      <MyAccordion title="Collaboration"></MyAccordion>
-      <MyAccordion title="Summary"></MyAccordion>
+      <MyAccordion title="Collaboration">
+        <h2>UX/UI Designers</h2>
+        <h3>Your collaboration:</h3>
+        <ul>
+          <li>Review designs for accessibility before development</li>
+          <li>Check color contrast ratios</li>
+          <li>Ensure focus indicators in design specs</li>
+          <li>Plan keyboard navigation flows</li>
+        </ul>
+        <h2>QA / Testers</h2>
+        <h3>Your collaboration:</h3>
+        <ul>
+          <li>Include accessibility in acceptance criteria</li>
+          <li>Test with keyboard only</li>
+          <li>Test with screen readers</li>
+          <li>Run automated accessibility tools</li>
+          <li>Test with browser zoom at 200%</li>
+        </ul>
+        <h2>Backend Developers</h2>
+        <h3>Your collaboration:</h3>
+        <ul>
+          <li>API returns semantic error messages</li>
+          <li>Provide proper status codes</li>
+          <li>Support keyboard navigation in data</li>
+          <li>Return structured data for screen readers</li>
+        </ul>
+        <h2>Product Managers</h2>
+        <h3>Your collaboration:</h3>
+        <ul>
+          <li>Include accessibility in requirements</li>
+          <li>Allocate time for accessibility testing</li>
+          <li>Prioritize accessibility bugs</li>
+          <li>Understand legal compliance needs</li>
+        </ul>
+      </MyAccordion>
+      <MyAccordion title="Summary">
+        <h2>What is Accessibility?</h2>
+        <p>
+          Making React applications usable by everyone, including people with
+          disabilities through:
+        </p>
+        <p>
+          Semantic HTML, ARIA attributes, Keyboard navigation, Focus management,
+          Screen reader support
+        </p>
+        <h2>Why It Matters</h2>
+        <p>
+          15% of people have disabilities, Legal requirement (ADA, Section 508,
+          WCAG), Better UX for everyone, SEO benefits
+        </p>
+        <h2>How It Works</h2>
+        <ul>
+          <li>Use semantic HTML elements (button, nav, header)</li>
+          <li>Add ARIA when needed (aria-label, aria-expanded)</li>
+          <li>Manage keyboard focus (useRef, tabIndex)</li>
+          <li>Test with assistive technologies</li>
+          <li>Use accessible component libraries (Radix, Reach UI)</li>
+        </ul>
+        <h2>When to Use It</h2>
+        <p>
+          <strong>Always.</strong> Accessibility should be:
+        </p>
+        <ul>
+          <li>Built in from the start</li>
+          <li>Part of your Definition of Done</li>
+          <li>Tested in every sprint</li>
+          <li>A team responsibility</li>
+        </ul>
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li>
+            <strong>Accessibility is not optional</strong> - it's a legal and
+            moral requirement
+          </li>
+          <li>
+            <strong>Start early</strong> - easier to build in than retrofit
+          </li>
+          <li>
+            <strong>Use the right tools</strong> - semantic HTML + accessible
+            libraries
+          </li>
+          <li>
+            <strong>Test regularly</strong> - keyboard, screen readers,
+            automated tools
+          </li>
+          <li>
+            <strong>Collaborate</strong> - work with design, QA, content,
+            product
+          </li>
+          <li>
+            <strong>Keep learning</strong> - accessibility standards evolve
+          </li>
+        </ul>
+      </MyAccordion>
     </>
   );
 }
