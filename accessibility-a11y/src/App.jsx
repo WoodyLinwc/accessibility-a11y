@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import MyAccordion from "./components/MyAccordion";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MyAccordion title="What is it?">Hello</MyAccordion>
+      <MyAccordion title="Why do we need it?">Hello</MyAccordion>
+      <MyAccordion title="How does it work?">Hello</MyAccordion>
+      <MyAccordion title="Show examples">Hello</MyAccordion>
+      <MyAccordion title="Tools / Libraries / Services">Hello</MyAccordion>
+      <MyAccordion title="Comparison">Hello</MyAccordion>
+      <MyAccordion title="Developer Responsibilities">Hello</MyAccordion>
+      <MyAccordion title="Collaboration">Hello</MyAccordion>
+      <MyAccordion title="Summary">Hello</MyAccordion>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
