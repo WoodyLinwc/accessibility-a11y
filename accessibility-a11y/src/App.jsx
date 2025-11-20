@@ -24,7 +24,7 @@ function App() {
             href="https://www.worldbank.org/en/topic/disability"
             target="_blank"
           >
-            15% of the world's population
+            16% of the world's population
           </a>{" "}
           has some form of disability and there is legal compliance (ADA,
           Section 508, WCAG guidelines)
